@@ -38,6 +38,24 @@ public class Basics {
                 System.out.println(i);
             }
         }
+        if (isPassed(5, 5)) {
+            System.out.println("Test 1: PASSED");
+        } else {
+            System.out.println("Test 1: FAILED");
+        }
+        if (isPassed(5, 3)) {
+            System.out.println("Test 2: PASSED");
+        } else {
+            System.out.println("Test 2: FAILED");
+        }
+        if (isPassed(-1, 1)) {
+            System.out.println("Test 3: PASSED");
+        } else {
+            System.out.println("Test 3: FAILED");
+        }cd D:\AQA
+    }
 
+    static boolean isPassed(int expected, int actual) {
+        return expected == actual;
     }
 }
