@@ -4,7 +4,7 @@ public class Basics {
     public static void main(String[] args) {
         int bugId = 101;
         String name = "Login fails";
-        char priority = 'H';
+        char priority = 'h';
         double severity = 7.5;
         boolean fixed = false;
         System.out.println("Bug #" + bugId + ": " + name + " | priority: " + priority + " | severity: " + severity
@@ -18,6 +18,13 @@ public class Basics {
             System.out.println("В бэклог");
         } else {
             System.out.println("Неизвестный приоритет");
+        }
+
+        switch (priority) {
+            case 'H', 'h' -> System.out.println("Чинить сегодня");
+            case 'M' -> System.out.println("В этом спринте");
+            case 'L' -> System.out.println("В бэклог");
+            default -> System.out.println("Неизвестный приоритет");
         }
     }
 }
