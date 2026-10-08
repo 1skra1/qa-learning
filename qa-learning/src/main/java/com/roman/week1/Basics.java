@@ -52,7 +52,7 @@ public class Basics {
             System.out.println("Test 3: PASSED");
         } else {
             System.out.println("Test 3: FAILED");
-        }cd D:\AQA
+        }
     }
 
     static boolean isPassed(int expected, int actual) {
