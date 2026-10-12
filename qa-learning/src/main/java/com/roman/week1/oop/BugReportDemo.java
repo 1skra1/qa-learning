@@ -6,5 +6,10 @@ public class BugReportDemo {
         System.out.println(bug1.getId() + ": " + bug1.getTitle());
         BugReport bug2 = new BugReport(102, "Registration fails", 'M', 5.0, false);
         System.out.println(bug2.getId() + ": " + bug2.getTitle());
+        bug1.printInfo();
+        bug1.setSeverity(15);
+        bug1.setSeverity(9);
+        bug1.markFixed();
+        bug1.printInfo();
     }
-}cd D:\AQA
+}

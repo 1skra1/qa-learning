@@ -34,4 +34,22 @@ public class BugReport {
     public boolean getFixed() {
         return fixed;
     }
+
+    public void markFixed() {
+        fixed = true;
+    }
+
+    public void setSeverity(double severity) {
+        if (severity >= 0 && severity <= 10) {
+            this.severity = severity;
+        } else {
+            System.out.println("Invalid severity: " + severity);
+        }
+    }
+
+    public void printInfo() {
+        System.out.println("Bug #" + id + ": " + title + " | priority: " + priority + " | severity: " + severity
+                + " | fixed: " + fixed);
+    }
+
 }
